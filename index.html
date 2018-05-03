@@ -1,4 +1,6 @@
 My Page
+alert("您的操作系统是：" + detectOS());
+function detectOS() {
 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
 
   //alert(navigator.userAgent);
@@ -16,3 +18,4 @@ if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
   alert('这是PC');
 
 };
+}
