@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+#a1 {background:red;}
+#a2 {background:green;}
+</style>
 <meta charset="utf-8">
 <script type="text/javascript">
 function myFunction(){
@@ -9,7 +13,7 @@ function myFunction(){
 </script>
 </head>
 <body onload = "myFunction()">
-	<input type="button" value="点我. . ." 
+	<input type="button" value="点我. . ." id="a1" onmouseover="this.id='a2'" onmouseout="this.id='a1'" 
 onclick="javascrtpt:window.location.href='https://note.youdao.com/share/?id=f1caaa44b0ca53cf5bf5937b1524b106&type=note#/'">
 </body>
 </html>
