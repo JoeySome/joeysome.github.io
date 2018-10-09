@@ -1,26 +1,20 @@
-
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" />
-<title>last.html</title>
-<style>
-</style>
-<script type="text/javascript">
-    var s1 = '2018-10-07';
+<meta charset="utf-8">
+<title>文档标题</title>
+</head>
+ 
+<body>
+<SCRIPT LANGUAGE="JavaScript">
+var s1 = '2018-10-07';
 s1 = new Date(s1.replace(/-/g, "/"));
 s2 = new Date();
 var days = s2.getTime() - s1.getTime();
 var time = parseInt(days / (1000 * 60 * 60 * 24));
- var minusTime = parseInt(29200 -  time);
-document.getElementById ('Tone').innerHTML = time;
- document.getElementById ('TTwo').innerHTML =minusTime;
-</script>
-</head>
-<body>
-    小尚同学和小菜同学已经在一起：
-    <span id="Tone"></span>天
- 还剩余ss：
- <span id="TTwo"></span>天
+document.write('小尚同学和小菜同学已经在一起：  ' +time +'  天 。');
+document.write('还剩余' +parseInt(29200 -  time) +'  天');
+ </SCRIPT>
 </body>
+ 
 </html>
