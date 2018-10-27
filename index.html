@@ -9,6 +9,8 @@
 <p id="p4" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#123456;font-size:60px"></p>
 <p id="p6" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#123456;font-size:60px"></p>
 <p id="p5" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#123456;font-size:60px"></p>
+<p id="p7" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#123456;font-size:60px"></p>
+<p id="p8" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#66CCCC;font-size:60px"></p>
 <script>
 var s1 = '2018-10-07';
 s1 = new Date(s1.replace(/-/g, "/"));
@@ -18,6 +20,12 @@ var time = parseInt(days / (1000 * 60 * 60 * 24));
 document.getElementById("p3").innerHTML = '小尚同学和小菜同学已经在一起：';
 document.getElementById("p4").innerHTML =  time + ' 天';
 document.getElementById("p6").innerHTML =  ' ';
+var s3 = new Date();
+if(parseInt(s3.getMonth()) == 4 && parseInt(s3.getDate()) == 1)
+{
+document.getElementById("p8").innerHTML = '小菜同学生日快乐！' ;
+}
+document.getElementById("p7").innerHTML = '';
 document.getElementById("p5").innerHTML ='还剩余 '+ parseInt(29200 -  time) + ' 天';
 </script>
 </body>
