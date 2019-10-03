@@ -2,15 +2,67 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="bootstrap-grid.min.css" />
+<link rel="stylesheet" type="text/css" href="htmleaf-demo.css">
 <title>JoeySome</title>
+
+
+<style type="text/css">
+		.text-effect{
+		    color: #fff;
+		    font-family: 'Monoton', cursive;
+		    font-size: 100px;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		    text-align: center;
+		    margin: 0 auto;
+		    display: block;
+		    position: relative;
+		}
+		.text-effect span{ animation: animate linear 3000ms infinite; }
+		       	.text-effect span:nth-child(1n){ animation-delay: 0s; }
+				.text-effect span:nth-child(2n){ animation-delay: 300ms; }
+				.text-effect span:nth-child(3n){ animation-delay: 500ms; }
+		@keyframes animate{
+		    0%{ opacity: 0.5; }
+		    100%{
+		       opacity:1;
+		       text-shadow: 0 0 80px Red,0 0 30px orange,0 0 6px DarkRed,0 0 50px yellow;
+		    }
+		}
+		@media only screen and (max-width: 990px){
+		    .text-effect{ font-size: 65px; }
+		}
+		@media only screen and (max-width: 767px){
+		    .text-effect{ font-size: 50px; }
+		}
+		@media only screen and (max-width: 479px){
+		    .text-effect{ font-size: 36px; }
+		}
+		@media only screen and (max-width: 359px){
+		    .text-effect{ font-size: 27px; }
+		}
+	</style>
+
+
 </head>
-<body>
+<body style="background-color: white;">
+	<div style="margin:  0 auto; margin-top: 10%">
+
+<div class="text-effect">
+  <span>·</span>
+  <span>·</span>
+  <span>·</span>
+</div>
+
+<div style="margin-top: 10%">
 <p id="p3" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#123456;font-size:60px"></p>
-<p id="p4" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#123456;font-size:60px"></p>
+<p id="p4" style="width: 100%;height: 45px;display: block;line-height: 120px;text-align: center; color:#123456;font-size:60px"></p>
 <p id="p6" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#123456;font-size:60px"></p>
-<p id="p5" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#123456;font-size:90px"></p>
 <p id="p7" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#123456;font-size:60px"></p>
 <p id="p8" style="width: 100%;height: 45px;display: block;line-height: 45px;text-align: center; color:#66CCCC;font-size:60px"></p>
+</div>
+</div>
 <script>
 var s1 = '2018-10-07';
 s1 = new Date(s1.replace(/-/g, "/"));
@@ -26,7 +78,6 @@ if(parseInt(s3.getMonth()) == 4 && parseInt(s3.getDate()) == 1)
 document.getElementById("p8").innerHTML = '小菜同学生日快乐！' ;
 }
 document.getElementById("p7").innerHTML = '';
-document.getElementById("p5").innerHTML ='世界和平';
 </script>
 </body>
 </html>
