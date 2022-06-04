@@ -1,0 +1,11 @@
+body{
+    height: auto;
+    background-image: url("/marry.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat:repeat-y;
+}
+
+#back_img{
+    width: 100%;
+}
